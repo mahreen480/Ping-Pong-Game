@@ -1,0 +1,62 @@
+        body {
+            background-color: #b0b0b0;
+        }
+        .game-container {
+            background-color: #008000;
+            width: 600px;
+            height: 400px;
+            position: relative;
+            margin: 0 auto;
+            border: 5px solid #ffffff;
+        }
+        .paddle {
+            width: 10px;
+            height: 60px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .paddle-left {
+            background-color: #ff0000;
+            left: 0;
+        }
+        .paddle-right {
+            background-color: #000000;
+            right: 0;
+        }
+        .ball {
+            width: 15px;
+            height: 15px;
+            background-color: #ffffff;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .score {
+            color: #ffffff;
+            font-size: 48px;
+            position: absolute;
+            top: 10px;
+        }
+        .score-left {
+            left: 50px;
+        }
+        .score-right {
+            right: 50px;
+        }
+        .dashed-line {
+            width: 2px;
+            height: 100%;
+            background: repeating-linear-gradient(
+                to bottom,
+                #ffffff,
+                #ffffff 10px,
+                transparent 10px,
+                transparent 20px
+            );
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
